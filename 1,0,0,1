@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+auto main (int argc, char** argv) -> int {
+    cout << "Hello, " << string(argv[1]) << endl;
+    return 0;
+}
