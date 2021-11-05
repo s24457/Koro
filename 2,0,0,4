@@ -9,7 +9,7 @@ auto main (int argc, char** argv) -> int {
             f++;
     }
     if (f == 0)
-        cout << Tak"\n";
+        cout << "Tak\n";
     else
         cout << "Nie\n";
     return 0;
