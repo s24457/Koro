@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+auto main (int argc, char** argv) -> int {
+   auto a = stoi(argv[1]);
+   int f = 0;
+    for (int i = 1; i < a/2 ; ++i) {
+        if (a % i == 0)
+            f++;
+    }
+    if (f != 0)
+        cout << "Nie\n";
+    else
+        cout << "Tak\n";
+    return 0;
+}
