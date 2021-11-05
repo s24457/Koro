@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+auto main (int argc, char** argv) -> int {
+    auto a = stoi(argv[1]);
+    auto b = stoi(argv[2]);
+    auto c = stoi(argv[3]);
+
+    if (a > b && a > c)
+        cout << a << endl;
+    else if (b > a &&  b > c)
+        cout << b << endl;
+    else
+        cout << c << endl;
+
+
+}
