@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void Foo (int a, int b){
+    if (a > b)
+        cout << a << " > " << b << endl;
+    else if (a < b)
+        cout << a << " < " << b << endl;
+    else
+        cout << a << " = " << b << endl;
+}
+
+auto main (int argc, char** argv) -> int {
+    auto const a = stoi(argv[1]);
+    for (int i = 2; i < argc; ++i) {
+       auto b = stoi(argv[i]);
+        Foo(a,b);
+    }
+
+    return 0;
+}
