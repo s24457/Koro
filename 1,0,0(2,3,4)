@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+auto main (int argc, char** argv) -> int {
+    auto a = stoi(argv[1]);
+    auto b = stoi(argv[2]);
+
+    cout << "Dodawanie " << a + b << endl;
+    cout << "Mnozenie " << a * b << endl;
+
+    if (a > b)
+        cout << a << " jest wieksza" << endl;
+    else
+        cout << b << " jest wieksza" << endl;
+
+    return 0;
+}
