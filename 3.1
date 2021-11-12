@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+auto init (int a[], int n) -> void{
+    for (int i = 0; i < n; ++i) {
+        a[i] = 0;
+    }
+}
+
+auto main (int argc, char** argv) -> int {
+    cout << "Enter size of array\n";
+    auto const sizeOfArr = stoi(argv[1]);
+    int arr[sizeOfArr];
+    init(arr,sizeOfArr);
+    return 0;
+}
+
