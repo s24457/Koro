@@ -1,0 +1,19 @@
+#include <iostream>
+#include <algorithm>
+#include "vector"
+using namespace std;
+
+void swap (int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+auto main (int argc, char** argv) -> int {
+    int aa = 12, bb = 33;
+    cout << aa << " " << bb << endl;
+    swap(aa, bb);
+    cout << aa << " " << bb << endl;
+    return 0;
+}
+
