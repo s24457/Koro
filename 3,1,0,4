@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+auto amin(int a[], int n) -> int {
+    int min = a[0], minIndex = 0;
+
+    for (int i = 1; i < n; ++i) {
+        if (a[i] < min){
+            min = a[i];
+            minIndex = i;
+        }
+    }
+    return minIndex;
+}
+
+
+auto main (int argc, char** argv) -> int {
+    int array[] = {42,9,-1,18,59,3,101,31,72,12};
+    cout << amin(array,(sizeof(array)/sizeof(array[0]))) << endl;
+    return 0;
+}
+
