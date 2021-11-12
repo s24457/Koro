@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+auto amax(int a[], int n) -> int {
+    int max = a[0], maxIndex = 0;
+
+    for (int i = 1; i < n; ++i) {
+        if (a[i] > max){
+            max = a[i];
+            maxIndex = i;
+        }
+    }
+    return maxIndex;
+}
+
+
+auto main (int argc, char** argv) -> int {
+    int array[] = {42,9,-1,18,59,3,101,31,72,12};
+    cout << amax(array,(sizeof(array)/sizeof(array[0]))) << endl;
+    return 0;
+}
+
