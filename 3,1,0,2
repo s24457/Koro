@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+auto iota (int a[], int n, int start) -> void{
+    for (int i = 0; i < n; ++i) {
+        a[i] = start;
+        start++;
+    }
+    }
+
+
+auto main (int argc, char** argv) -> int {
+
+    auto const sizeOfArr = stoi(argv[1]);
+    auto const start = stoi(argv[2]);
+    int arr[sizeOfArr];
+    iota(arr,sizeOfArr,start);
+
+    for (int i = 0; i < sizeOfArr; ++i) {
+        cout << arr[i] << endl;
+    }
+    return 0;
+}
+
